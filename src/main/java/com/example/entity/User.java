@@ -1,6 +1,4 @@
 package com.example.entity;
-
-import com.example.entity.enums.ShopState;
 import com.example.entity.enums.UserRole;
 import lombok.AllArgsConstructor;
 import lombok.Data;
