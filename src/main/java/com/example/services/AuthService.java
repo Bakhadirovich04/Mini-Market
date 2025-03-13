@@ -35,10 +35,11 @@ public record AuthService() {
                     System.out.print("Select Role: ");
                     switch (intScanner.nextInt()){
                         case 1->user.setRole(UserRole.USER);
-                        case 2->{user.setRole(UserRole.SALER);}
+                        case 2->{user.setRole(UserRole.SELLER);}
                         default -> {System.out.println("Action not found");}
                     }
-                    user.setShops(new ArrayList<>());
+                    user.setBalance(0.00);
+                    user.setBasket(new ArrayList<>());
                     signUp(user);
                 }
                 case 2->{
@@ -70,8 +71,8 @@ public record AuthService() {
         if (user.getRole().equals(UserRole.USER)){
            UserService.service();
         }
-        else if(user.getRole().equals(UserRole.SALER)){
-            SallerService.service();
+        else if(user.getRole().equals(UserRole.SELLER)){
+            SellerService.service();
         }
     }
 

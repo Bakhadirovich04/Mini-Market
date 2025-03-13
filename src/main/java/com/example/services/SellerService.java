@@ -12,7 +12,7 @@ public class SellerService {
                     3.create shop
                     4.show shops
                     5.show history
-                    6.delete history
+                    6.delete profile
                     """);
             System.out.print("Select a command: ");
             switch (intScanner.nextInt()){

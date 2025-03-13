@@ -17,5 +17,6 @@ public class User {
     private String email;
     private String password;
     private UserRole role;
-    private List<Shop> shops;
+    private Double balance;
+    private List<Product> basket;
 }
